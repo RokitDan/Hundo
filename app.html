@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>APP NAME: Coding Challenge by Danny Schellenberger</title>
+    <title>Hundo: Coding Challenge by Danny Schellenberger</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -57,7 +57,7 @@
             height="40"
             class="d-inline-block"
           />
-          <span class="mx-3" id="appName">APP NAME</span></a
+          <span class="mx-3" id="appName">Hundo</span></a
         >
         <button
           class="navbar-toggler"
@@ -98,9 +98,13 @@
     <!-- MAIN -->
     <main class="content">
       <div class="container mt-5 align-items-center justify-content-center">
-        <h1>APP UI GOES HERE</h1>
-        <input type="text" id="message" placeholder="Enter a Message" />
-        <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+        <h1>Calculate Factorial</h1>
+        <input type="number" id="startValue" placeholder="Enter a Starting Value" value=1/>
+        <input type="number" id="endValue" placeholder="Enter an Ending Value" value=10/>
+        <button id="btnSubmit" class="btn btn-primary">Display Factorial</button>
+        <div class="display-5 my-5" id="results">
+
+        </div>
       </div>
     </main>
     <!-- FOOTER -->
@@ -143,7 +147,7 @@
     <!-- JS file -->
     <script src="/js/site.js"></script>
     <script>
-      document.getElementById("btnSubmit").addEventListener("click", getValue2);
+      document.getElementById("btnSubmit").addEventListener("click", getNumbers);
     </script>
   </body>
 </html>
